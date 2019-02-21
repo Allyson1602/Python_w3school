@@ -2,7 +2,6 @@ import re
 
 texto = "O arco-íris é bastante colorido"
 
-
 print("Verifica se começa com 'O' e termina com 'colorido'".upper())
 veri1 = re.search("^O.*colorido$", texto)
 
@@ -27,7 +26,7 @@ print(veri3)
 
 print('\n')
 
-print('Procura pelo caracter que comece com \'a\', termine com \'s\' e entre os dois, possua 7 caracteres.'.upper())
+print('Procura pelo caracter que comece com \'a\', termina com \'s\' e entre os dois, possua 7 caracteres.'.upper())
 veri4 = re.findall('a.......s', texto)
 print(veri4)
 
@@ -44,3 +43,8 @@ veri6 = re.findall('colorido$', texto)
 print(veri6)
 
 print('\n')
+print('\n')
+
+print('Retorna uma correspondência se os caracteres estiverem no início da string'.upper())
+veri7 = re.findall('\AO', texto)
+print(veri7)
